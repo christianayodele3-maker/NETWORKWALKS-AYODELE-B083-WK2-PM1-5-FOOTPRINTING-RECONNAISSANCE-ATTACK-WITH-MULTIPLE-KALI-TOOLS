@@ -32,10 +32,12 @@ Only test systems you own or have written permission to test.
 Screenshots are in the `screenshots/` folder.
 
 ## Part 2: Network Scanning (Zenmap, my own LAN)
-- **Network configuration:** <!-- your IP, subnet, gateway -->
-- **Active hosts discovered:** <!-- number of hosts and their IPs -->
-- **IP and MAC addresses:** <!-- list of what you collected -->
+- **Network configuration:** Phone hotspot network, subnet 10.75.21.0/24 (scanned with `nmap -T4 -F 10.75.21.0/24`).
+- **Active hosts discovered:** 2 hosts up. 10.75.21.161 (hotspot gateway) has port 53 (DNS) open. 10.75.21.103 (my laptop) has ports 135, 139 and 445 open.
+- **IP and MAC addresses:** 10.75.21.161 (EE:5D:8F:XX:XX:XX). 10.75.21.103 (MAC not shown, it is the scanning machine).
 - **Network topology:** 
+
+![topology](8-Nmap topology.png)
 
 
  
